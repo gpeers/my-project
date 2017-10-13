@@ -11,6 +11,8 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
+
+depends "apt"
 # issues_url 'https://github.com/<insert_org_here>/my-project/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
