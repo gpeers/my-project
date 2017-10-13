@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('Lint') {
       steps {
         echo 'hello word!'
         chef_cookbook_lint(installation: 'ChefDK Local')
