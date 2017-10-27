@@ -8,5 +8,10 @@ pipeline {
         chef_cookbook_cookstyle(installation: 'ChefDK Local')
       }
     }
+    stage('Functional') {
+      steps {
+        chef_cookbook_functional()
+      }
+    }
   }
 }
