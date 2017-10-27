@@ -3,14 +3,12 @@ pipeline {
   stages {
     stage('Lint') {
       steps {
-        echo 'hello word!'
-        chef_cookbook_lint(installation: 'ChefDK Local')
-        chef_cookbook_cookstyle(installation: 'ChefDK Local')
+        echo 'hello world!'
       }
     }
     stage('Functional') {
       steps {
-        chef_cookbook_functional()
+        chef_cookbook_functional(installation: 'ChefDK Local')
       }
     }
   }
