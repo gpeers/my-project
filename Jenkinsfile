@@ -6,10 +6,5 @@ pipeline {
         echo 'hello world!'
       }
     }
-    stage('Functional') {
-      steps {
-        chef_cookbook_functional(installation: 'ChefDK Local')
-      }
-    }
   }
 }
